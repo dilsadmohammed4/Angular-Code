@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+<br />
+<br />
+<input type="text" #box1 (keyup)="getData(box1.value)" placeholder="Event keyup" />
+<br />
+<br />
+<input type="text" #box2 (keydown)="getData(box2.value)" placeholder="Event keydown" />
+<br />
+<br />
+<input type="text" #box3 (blur)="getData(box3.value)" placeholder="Event blur" />
+<br />
+<br />
+<input type="text" #box4 (input)="getData(box4.value)" placeholder="Event input" />
+
+<h1 (mouseover)="getData('over')">Dilsad Mohammed</h1>
+<h1 (mouseleave)="getData('leave')">Hello!</h1>

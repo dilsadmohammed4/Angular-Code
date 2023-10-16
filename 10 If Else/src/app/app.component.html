@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<h1 *ngIf="show1; then ifBlock; else elseBlock"></h1>
+<h1 *ngIf="show2 == 'yes'; then ifBlock; else elseBlock"></h1>
+<h1 *ngIf="show3; then ifBlock; else elseBlock"></h1>
+<button (click)="setShow3()">Click me</button>
+
+<ng-template #ifBlock>
+  <h1>If condition</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1>Else condition</h1>
+</ng-template>
