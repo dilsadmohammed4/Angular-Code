@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+<h2>Array</h2>
+<h3 *ngFor="let user of users">Name: {{ user }}</h3>
+<h2>Object of Array</h2>
+<h3 *ngFor="let user of userDetails">
+  Name: {{ user.name }}, Email: {{ user.email }}, Ph No.: {{ user.phNo }}
+</h3>
+
+<h2>Nested For Loop:</h2>
+<ul *ngFor="let people of peopleDetails">
+  <li>{{ people.name }}</li>
+  <li>{{ people.phNo }}</li>
+  <ul *ngFor="let account of people.socialMedia">
+    <li>{{ account }}</li>
+  </ul>
+</ul>

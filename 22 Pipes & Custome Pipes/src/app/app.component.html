@@ -1,0 +1,19 @@
+<h1>{{ title | uppercase }}</h1>
+<h1>{{ title | lowercase }}</h1>
+<h1>{{ title }}</h1>
+
+<h1>{{ date }}</h1>
+<h1>{{ date | date }}</h1>
+<h1>{{ date | date : "fullDate" }}</h1>
+
+<!-- Advance Pipes -->
+<h1>{{ title | slice : 3 : 13 }}</h1>
+<h1>{{ title | slice : 3 : 10 | uppercase }}</h1>
+<h1>{{ 0004000.00002 | number : "3.1-4" }}</h1>
+<h1>{{ 20 | currency : "USD" }}</h1>
+<h1>{{ 2000 | currency : "INR" }}</h1>
+<h1>
+  {{ "hello how are you" | slice : 0 : 1 | uppercase
+  }}{{ "hello how are you" | slice : 1 | lowercase }}
+</h1>
+<h1>Custom Pipe USD to INR : {{ 5 | usdInr : 83.24 }}</h1>

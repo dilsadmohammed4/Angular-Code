@@ -1,0 +1,26 @@
+nav img {
+    height: 46px;
+}
+
+nav {
+    background-color: #0d47a1;
+    padding: 10px;
+}
+
+ul {
+    float: right;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+    font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    font-weight: 400
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}

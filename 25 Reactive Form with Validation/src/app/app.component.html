@@ -1,0 +1,14 @@
+<h1>{{ title | uppercase }}</h1>
+<form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+  <input type="text" placeholder="Enter Username" name="username" formControlName="username" /><br />
+  <span style="color: red" *ngIf="userValidator && userValidator.invalid && userValidator.touched">
+    This field is not valid
+  </span>
+  <br />
+  <input type="text" placeholder="Enter Password" name="password" formControlName="password" /><br />
+  <span style="color: red" *ngIf="passwordValidator && passwordValidator.invalid && passwordValidator.touched">
+    This field is not valid
+  </span>
+  <br />
+  <button [disabled]="loginForm.invalid">Submit</button>
+</form>

@@ -1,0 +1,18 @@
+<h1>{{ title | uppercase }}</h1>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+  <input
+    type="text"
+    placeholder="Enter Username"
+    name="username"
+    ngModel
+  /><br /><br />
+  <input
+    type="text"
+    placeholder="Enter Password"
+    name="password"
+    ngModel
+  /><br /><br />
+  <button>Submit</button>
+</form>
+
+<button (click)="userLogin(loginForm.value)">Outside Button</button>

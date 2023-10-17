@@ -1,0 +1,29 @@
+<h1>{{ title }}</h1>
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+  <input
+    ngModel
+    type="text"
+    name="username"
+    placeholder="Enter name"
+  /><br /><br />
+  <input
+    ngModel
+    type="email"
+    name="email"
+    placeholder="Enter email"
+  /><br /><br />
+  <input
+    ngModel
+    type="password"
+    name="password"
+    placeholder="Enter password"
+  /><br /><br />
+  <button (click)="toggle()">Register</button>
+</form>
+
+<div *ngIf="display">
+  <h1>User Details</h1>
+  <h3>Name : {{ user.username }}</h3>
+  <h3>Email : {{ user.email }}</h3>
+  <h3>Password : {{ user.password }}</h3>
+</div>
